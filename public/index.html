@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #switchArea {
+            display: none;
+        }
+        #canvas {
+            border: 1ps solid #000;
+            display: block;
+            margin: 0 auto;
+            background: #fffacc;
+        }
+        #gameArea {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="" id="userForm">
+        <p id="playerWelcome"></p>
+        <input type="text" id="userName" requires maxlength="10" autocomplete="off">
+        <button type="submit">GO</button>
+    </form>
+
+
+    <div id="switchArea">
+        <p id="userInfo"></p>
+        <button id="switchButton">switch</button>
+    </div>
+
+    <div id="gameArea">
+        <canvas id="canvas" tabindex="0" width="640" height="480"></canvas>
+    </div>
+    
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
